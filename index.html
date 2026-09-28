@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mira Voss — Landscape &amp; Horizon Studies</title>
+<meta name="description" content="Mira Voss — minimalist landscape and horizon studies from twelve years of travel. Prints, commissions, and journal.">
+<!-- Marks the page as JS-enabled before first paint, so CSS can hide
+     reveal-on-scroll content only when JavaScript will actually reveal it. -->
+<script>document.documentElement.classList.add('js');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="wordmark" href="#top">Mira Voss</a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+      <span class="visually-hidden">Menu</span>
+      <span class="nav-toggle-bars" aria-hidden="true"><span></span><span></span><span></span></span>
+    </button>
+
+    <nav class="main-nav" id="primary-nav" aria-label="Primary">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#press">Press</a>
+      <a href="#contact" class="nav-cta">Get in touch</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="top">
+    <picture class="hero-picture">
+      <source media="(max-width: 600px)" srcset="img/hero-sm.jpg">
+      <source media="(max-width: 900px)" srcset="img/hero-md.jpg">
+      <img src="img/hero-lg.jpg" alt="Minimalist gradient horizon study, warm dusk tones over layered ridgelines" class="hero-img">
+    </picture>
+    <div class="hero-overlay">
+      <div class="wrap hero-copy">
+        <p class="kicker">Landscape &amp; horizon studies, 2014–present</p>
+        <h1>Twelve years spent looking at the line where land meets sky.</h1>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#work">See the work</a>
+          <a class="btn btn-ghost" href="#about">About Mira</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="work" id="work">
+    <div class="wrap">
+      <div data-reveal>
+        <h2>Recent studies</h2>
+        <p class="section-lede">A rotating set of six, drawn from journeys across high desert, coastline, and salt flat. Filter by tone, or select any study to view it larger.</p>
+
+        <!-- Hidden until script.js runs, so there are no dead controls without JavaScript. -->
+        <div class="filters" role="group" aria-label="Filter studies by tone" hidden>
+          <button type="button" class="filter-btn" data-filter="all" aria-pressed="true">All <span class="count"></span></button>
+          <button type="button" class="filter-btn" data-filter="warm" aria-pressed="false">Warm <span class="count"></span></button>
+          <button type="button" class="filter-btn" data-filter="cool" aria-pressed="false">Cool <span class="count"></span></button>
+          <button type="button" class="filter-btn" data-filter="neutral" aria-pressed="false">Neutral <span class="count"></span></button>
+        </div>
+        <p class="filter-status" id="filter-status" role="status" aria-live="polite"></p>
+      </div>
+
+      <div class="gallery">
+
+        <figure class="gallery-item" data-tone="warm" data-reveal>
+          <a class="gallery-link" href="img/dawn-ridge-lg.jpg">
+            <img src="img/dawn-ridge-md.jpg"
+              srcset="img/dawn-ridge-sm.jpg 640w, img/dawn-ridge-md.jpg 1000w, img/dawn-ridge-lg.jpg 1600w"
+              sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
+              alt="Warm dawn ridge study with layered amber hills" loading="lazy" width="1000" height="640">
+          </a>
+          <figcaption><span class="cap-title">Dawn Ridge</span><span class="cap-meta">Atacama study · 2021</span></figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-tone="cool" data-reveal>
+          <a class="gallery-link" href="img/coastal-fog-lg.jpg">
+            <img src="img/coastal-fog-md.jpg"
+              srcset="img/coastal-fog-sm.jpg 640w, img/coastal-fog-md.jpg 1000w, img/coastal-fog-lg.jpg 1600w"
+              sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
+              alt="Cool coastal fog study with muted green-grey ridgelines" loading="lazy" width="1000" height="640">
+          </a>
+          <figcaption><span class="cap-title">Coastal Fog</span><span class="cap-meta">North Atlantic · 2019</span></figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-tone="warm" data-reveal>
+          <a class="gallery-link" href="img/dusk-canyon-lg.jpg">
+            <img src="img/dusk-canyon-md.jpg"
+              srcset="img/dusk-canyon-sm.jpg 640w, img/dusk-canyon-md.jpg 1000w, img/dusk-canyon-lg.jpg 1600w"
+              sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
+              alt="Deep violet and clay dusk study over a canyon silhouette" loading="lazy" width="1000" height="640">
+          </a>
+          <figcaption><span class="cap-title">Dusk Canyon</span><span class="cap-meta">Colorado Plateau · 2022</span></figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-tone="warm" data-reveal>
+          <a class="gallery-link" href="img/high-desert-lg.jpg">
+            <img src="img/high-desert-md.jpg"
+              srcset="img/high-desert-sm.jpg 640w, img/high-desert-md.jpg 1000w, img/high-desert-lg.jpg 1600w"
+              sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
+              alt="High desert study in warm ochre and rust tones" loading="lazy" width="1000" height="640">
+          </a>
+          <figcaption><span class="cap-title">High Desert</span><span class="cap-meta">Namib fringe · 2018</span></figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-tone="cool" data-reveal>
+          <a class="gallery-link" href="img/alpine-morn-lg.jpg">
+            <img src="img/alpine-morn-md.jpg"
+              srcset="img/alpine-morn-sm.jpg 640w, img/alpine-morn-md.jpg 1000w, img/alpine-morn-lg.jpg 1600w"
+              sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
+              alt="Cool alpine morning study with soft blue-grey layered peaks" loading="lazy" width="1000" height="640">
+          </a>
+          <figcaption><span class="cap-title">Alpine Morning</span><span class="cap-meta">Dolomites · 2020</span></figcaption>
+        </figure>
+
+        <figure class="gallery-item" data-tone="neutral" data-reveal>
+          <a class="gallery-link" href="img/salt-flat-lg.jpg">
+            <img src="img/salt-flat-md.jpg"
+              srcset="img/salt-flat-sm.jpg 640w, img/salt-flat-md.jpg 1000w, img/salt-flat-lg.jpg 1600w"
+              sizes="(max-width: 600px) 100vw, (max-width: 900px) 50vw, 33vw"
+              alt="Pale, bleached salt flat study with a soft white sun" loading="lazy" width="1000" height="640">
+          </a>
+          <figcaption><span class="cap-title">Salt Flat</span><span class="cap-meta">Uyuni · 2023</span></figcaption>
+        </figure>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="wrap about-inner">
+      <div class="about-media" data-reveal>
+        <img src="img/about-lg.jpg" srcset="img/about-sm.jpg 600w, img/about-lg.jpg 1000w"
+          sizes="(max-width: 900px) 90vw, 40vw"
+          alt="Soft ochre horizon study used as a portrait placeholder" loading="lazy" width="1000" height="1250">
+      </div>
+      <div class="about-copy" data-reveal>
+        <h2>Slow work, made on foot</h2>
+        <p>Mira Voss studies horizons — the specific, shifting line where one kind of land gives way to sky. Each print starts as a week or more spent in one place: walking the same ridge at different hours, waiting for weather, returning the next year to see what changed.</p>
+        <p>The result is less reportage than record: a set of studies that ask what a place looked like on one particular morning, and whether it still does.</p>
+        <p class="about-stats">
+          <span><strong data-count="12">12</strong> years in the field</span>
+          <span><strong data-count="31">31</strong> countries documented</span>
+          <span><strong data-count="6">6</strong> gallery shows</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="press" id="press">
+    <div class="wrap" data-reveal>
+      <blockquote class="press-quote">
+        <p>Voss treats the horizon the way other photographers treat a face — with patience, and without hurry.</p>
+        <cite>— Northlight Journal</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="wrap contact-inner" data-reveal>
+      <h2>Prints, commissions, and press</h2>
+      <p>Limited-edition prints ship worldwide. Send a note and expect a reply within three days.</p>
+
+      <form class="contact-form" id="contact-form" novalidate>
+        <div class="field">
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" autocomplete="name" required aria-describedby="name-error">
+          <p class="field-error" id="name-error" hidden></p>
+        </div>
+
+        <div class="field">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error">
+          <p class="field-error" id="email-error" hidden></p>
+        </div>
+
+        <div class="field">
+          <label for="topic">I'm writing about</label>
+          <select id="topic" name="topic">
+            <option value="print">A print</option>
+            <option value="commission">A commission</option>
+            <option value="press">Press or publication</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" maxlength="500" required aria-describedby="message-error message-count"
+            placeholder="Which study are you interested in, and what size?"></textarea>
+          <div class="field-foot">
+            <p class="field-error" id="message-error" hidden></p>
+            <p class="char-count" id="message-count">0 / 500</p>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <p class="wordmark wordmark--footer">Mira Voss</p>
+      <p>Landscape &amp; horizon studies.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Studio</h4>
+      <p>Based between Lisbon and the road.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <p><a href="mailto:studio@miravoss.example">studio@miravoss.example</a></p>
+    </div>
+    <div class="footer-col">
+      <h4>Follow</h4>
+      <p><a href="#">Instagram</a><br><a href="#">Journal</a></p>
+    </div>
+  </div>
+  <p class="footer-fine wrap">© 2026 Mira Voss. All studies available as limited-edition prints.</p>
+</footer>
+
+<button class="back-to-top" type="button" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" focusable="false"><path d="M6 15l6-6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<!-- Lightbox: native <dialog> gives us focus trapping, Esc-to-close and an inert page behind it. -->
+<dialog class="lightbox" id="lightbox" aria-label="Image viewer">
+  <div class="lightbox-bar">
+    <p class="lightbox-count" aria-hidden="true"></p>
+    <button type="button" class="lightbox-close" aria-label="Close viewer" autofocus>
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <div class="lightbox-stage">
+    <button type="button" class="lightbox-nav lightbox-prev" aria-label="Previous study">
+      <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <figure class="lightbox-figure">
+      <img class="lightbox-img" src="" alt="">
+      <figcaption class="lightbox-caption" aria-live="polite"></figcaption>
+    </figure>
+    <button type="button" class="lightbox-nav lightbox-next" aria-label="Next study">
+      <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+  </div>
+</dialog>
+
+</body>
+</html>
